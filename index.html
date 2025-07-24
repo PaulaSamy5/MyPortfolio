@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Paula Samy Philip | Portfolio</title>
+    <link rel="icon" type="image/png" href="images/icon.png" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Cairo:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="#" class="logo">
+          <span class="en">Paula Samy</span>
+          <span class="ar">بولا سامي</span>
+        </a>
+
+        <!-- Add toggler button -->
+        <button class="navbar-toggler" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <ul class="nav-links">
+          <li>
+            <a href="#" class="nav-link active" data-section="home">
+              <span class="en">Home</span>
+              <span class="ar">الرئيسية</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link" data-section="about">
+              <span class="en">About</span>
+              <span class="ar">عني</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link" data-section="skills">
+              <span class="en">Skills</span>
+              <span class="ar">المهارات</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="nav-link" data-section="projects">
+              <span class="en">Projects</span>
+              <span class="ar">المشاريع</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button class="theme-toggle" aria-label="Toggle theme">
+            <i class="fas fa-moon"></i>
+          </button>
+          <button class="lang-toggle" aria-label="Toggle language">EN</button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="en">Paula Samy Philip</span>
+            <span class="ar">بولا سامي فيليب</span>
+          </h1>
+          <p class="hero-subtitle">
+            <span class="en">Frontend & ASP.NET Developer</span>
+            <span class="ar">مطور واجهات و ASP.NET</span>
+          </p>
+          <div class="hero-location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span class="en">Suez, Egypt</span>
+            <span class="ar">السويس، مصر</span>
+          </div>
+          <button class="cta-button" data-section="projects">
+            <span class="en">See My Work</span>
+            <span class="ar">تصفح أعمالي</span>
+            <i class="fas fa-arrow-right"></i>
+          </button>
+
+          <div class="social-icons">
+            <a href="https://www.facebook.com/paula.samy.9862/" target="_blank">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/paula-samy-5097a2266/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://github.com/PaulaSamy5" target="_blank">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/paula.samy.9862/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Modals -->
+    <div class="modal" id="about-modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+          <h2 class="modal-title">
+            <span class="en">About Me</span>
+            <span class="ar">عني</span>
+          </h2>
+          <div class="about-grid">
+            <div class="about-image">
+              <img src="images/Paula.jpg" alt="Paula Samy" />
+            </div>
+            <div class="about-info">
+              <p class="about-text">
+                <span class="en"
+                  >I am a passionate Full Stack Developer with expertise in both
+                  frontend and backend technologies. Currently focusing on
+                  ASP.NET development and expanding my knowledge in modern web
+                  technologies.</span
+                >
+                <span class="ar"
+                  >أنا مطور ويب شغوف بتطوير الواجهات الأمامية والخلفية. أركز
+                  حالياً على تطوير ASP.NET وتوسيع معرفتي في تقنيات الويب
+                  الحديثة.</span
+                >
+              </p>
+              <div class="info-cards">
+                <div class="info-card">
+                  <i class="fas fa-graduation-cap"></i>
+                  <h3>
+                    <span class="en">Education</span>
+                    <span class="ar">التعليم</span>
+                  </h3>
+                  <p>
+                    <span class="en">
+                      BSc in MIS – ERU<br />
+                      CGPA: 3.33 (Very Good)
+                    </span>
+                    <span class="ar">
+                      بكالوريوس نظم معلومات إدارية – الجامعة المصرية الروسية |
+                      جيد جداً (3.33)
+                    </span>
+                  </p>
+                </div>
+                <div class="info-card">
+                  <i class="fas fa-envelope"></i>
+                  <h3>
+                    <span class="en">Email</span>
+                    <span class="ar">البريد الإلكتروني</span>
+                  </h3>
+                  <p>paulasamy52@gmail.com</p>
+                </div>
+                <div class="info-card">
+                  <i class="fas fa-phone"></i>
+                  <h3>
+                    <span class="en">Phone</span>
+                    <span class="ar">الهاتف</span>
+                  </h3>
+                  <p>01289562111</p>
+                </div>
+                <div class="info-card">
+                  <i class="fas fa-phone"></i>
+                  <h3>
+                    <span class="en">Location</span>
+                    <span class="ar">العنوان</span>
+                  </h3>
+                  <p>Suez, Egypt</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="skills-modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+          <h2 class="modal-title">
+            <span class="en">My Skills</span>
+            <span class="ar">مهاراتي</span>
+          </h2>
+          <div class="skills-grid">
+            <div class="skills-category">
+              <h3>
+                <i class="fas fa-code"></i>
+                <span class="en">Frontend</span>
+                <span class="ar">الواجهة الأمامية</span>
+              </h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">HTML</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">CSS</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">JavaScript</span>
+                  <span class="skill-level">
+                    <span class="en">Good</span>
+                    <span class="ar">جيد</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="80"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Bootstrap</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جدا</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+            </div>
+            <div class="skills-category">
+              <h3>
+                <i class="fas fa-server"></i>
+                <span class="en">Backend</span>
+                <span class="ar">الواجهة الخلفية</span>
+              </h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">C#</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">SQL</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Entity Framework Core</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">LINQ</span>
+                  <span class="skill-level">
+                    <span class="en">Good</span>
+                    <span class="ar">جيد</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="80"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3>
+                <i class="fas fa-server"></i>
+                <span class="en">Languages</span>
+                <span class="ar">اللغات</span>
+              </h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"
+                    ><span class="en">Arabic</span>
+                    <span class="ar">العربية</span></span
+                  >
+                  <span class="skill-level">
+                    <span class="en">Excellent</span>
+                    <span class="ar">ممتاز</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="100"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">
+                    <span class="en">English</span>
+                    <span class="ar">الإنجليزية</span>
+                  </span>
+                  <span class="skill-level">
+                    <span class="en">Good</span>
+                    <span class="ar">جيد</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="80"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="skills-category">
+              <h3>
+                <i class="fas fa-server"></i>
+                <span class="en">Microsoft Office</span>
+                <span class="ar">أوفيس</span>
+              </h3>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Word</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="100"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name"> PowerPoint </span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">Excel</span>
+                  <span class="skill-level">
+                    <span class="en">Very Good</span>
+                    <span class="ar">جيد جداً</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="90"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <div class="skill-header">
+                  <span class="skill-name">PowerBi</span>
+                  <span class="skill-level">
+                    <span class="en">Good</span>
+                    <span class="ar">جيد</span>
+                  </span>
+                </div>
+                <div class="skill-bar">
+                  <div class="skill-progress" data-level="75"></div>
+                </div>
+              </div>
+            </div>
+            <div class="blazor-note">
+              <i class="fab fa-microsoft"></i>
+              <p>
+                <span class="en">Currently developing skills in Blazor</span>
+                <span class="ar">حالياً أطور مهاراتي في Blazor</span>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="projects-modal">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+          <h2 class="modal-title">
+            <span class="en">My Projects</span>
+            <span class="ar">مشاريعي</span>
+          </h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/Eparking.jpg" alt="Project" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://www.linkedin.com/posts/paula-samy-5097a2266_graduationproject-eparkingsystem-aspnet-activity-7352777197385846784-3A4O?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFBrlkB7_X9vrT8d2KcLRP0v_VhuWSOunQ"
+                      class="project-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PaulaSamy5/E-ParkingSystem-Website-GradProject"
+                      class="project-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>
+                  <span class="en"
+                    >E-Parking System For Egypt International Exhibition
+                    Center</span
+                  >
+                  <span class="ar"
+                    >نظام مواقف السيارات الإلكتروني لمركز مصر للمعارض
+                    الدولية</span
+                  >
+                </h3>
+                <p>
+                  <span class="en"
+                    >This E-Parking System is a smart parking management
+                    platform designed for the Egypt International Exhibition
+                    Center. It aims to reduce congestion and enhance the parking
+                    experience during major events by offering features like
+                    real-time slot availability, online booking, reservation
+                    history, and an admin dashboard for monitoring and control.
+                  </span>
+                  <span class="ar"
+                    >نظام مواقف السيارات الإلكتروني هو منصة ذكية لإدارة مواقف
+                    السيارات، مصممة خصيصًا لمركز مصر للمعارض الدولية. يهدف
+                    النظام إلى تقليل الازدحام وتحسين تجربة ركن السيارات خلال
+                    الفعاليات الكبرى، من خلال توفير ميزات مثل توفر المواقف بشكل
+                    فوري، والحجز عبر الإنترنت، وسجل الحجوزات، ولوحة تحكم إدارية
+                    للمراقبة والتحكم.</span
+                  >
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">ASP.NET</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">EFCore</span>
+                  <span class="tag">LINQ</span>
+                  <span class="tag">MVC</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/Blazor.png" alt="Project" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://www.linkedin.com/posts/paula-samy-5097a2266_blazor-csharp-sql-activity-7239695679483219968-3lBh?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFBrlkB7_X9vrT8d2KcLRP0v_VhuWSOunQ"
+                      class="project-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PaulaSamy5/SchoolSystemBlazor"
+                      class="project-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>
+                  <span class="en">School System Project</span>
+                  <span class="ar">مشروع نظام المدرسة</span>
+                </h3>
+                <p>
+                  <span class="en"
+                    >This School Management System is a web-based application
+                    built with Blazor, designed to simplify the management of
+                    students, instructors, and courses. It allows to add,
+                    delete, and view detailed information for each entity.
+                    Courses can be assigned to students easily through an
+                    intuitive interface. The project uses HTML and CSS on the
+                    frontend with C#, SQL, LINQ, and Entity Framework Core on
+                    the backend. It offers a responsive, user-friendly
+                    experience, making it a practical solution for schools
+                    aiming to streamline academic data management.
+                  </span>
+                  <span class="ar"
+                    >ننظام إدارة المدرسة هو تطبيق ويب تم بناؤه باستخدام Blazor،
+                    ويهدف إلى تبسيط إدارة الطلاب، المعلمين، والمقررات الدراسية.
+                    يتيح النظام إضافة وحذف وعرض معلومات تفصيلية لكل كيان، كما
+                    يتيح تعيين المقررات الدراسية للطلاب بسهولة من خلال واجهة
+                    استخدام بسيطة وسلسة. تم تطوير الواجهة الأمامية باستخدام HTML
+                    وCSS، أما الجزء الخلفي فتم باستخدام C#، SQL، LINQ، وEntity
+                    Framework Core. ويوفّر النظام تجربة استخدام مرنة وسهلة، مما
+                    يجعله حلاً عمليًا للمدارس التي تسعى إلى تنظيم بياناتها
+                    الأكاديمية بكفاءة.</span
+                  >
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Bootstrap</span>
+                  <span class="tag">ASP.NET Core</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">SQL</span>
+                  <span class="tag">EFCore</span>
+                  <span class="tag">LINQ</span>
+                  <span class="tag">Blazor</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/PAP.png" alt="Project" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://www.linkedin.com/posts/paula-samy-5097a2266_frontenddevelopment-ecommerce-html-activity-7239260437647679489-tfnO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFBrlkB7_X9vrT8d2KcLRP0v_VhuWSOunQ"
+                      class="project-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PaulaSamy5/PAPV2"
+                      class="project-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>
+                  <span class="en"
+                    >PAP E-Comerce Project UI (Front-End Onle)</span
+                  >
+                  <span class="ar"
+                    >واجهة مستخدم مشروع التجارة الإلكترونية PAP (الواجهة
+                    الأمامية فقط)</span
+                  >
+                </h3>
+                <p>
+                  <span class="en"
+                    >PAP is a front-end e-commerce website I developed for a
+                    college project. It features a home page, sign-in and
+                    sign-up pages, products page, product description page, and
+                    a checkout page. Built using HTML, CSS, JavaScript, and
+                    Bootstrap, this project focuses on creating a responsive and
+                    user-friendly interface.
+                  </span>
+                  <span class="ar"
+                    >PAP هو موقع تجارة إلكترونية للواجهة الأمامية قمتُ بتطويره
+                    كمشروع جامعي. يحتوي الموقع على صفحة رئيسية، وصفحات لتسجيل
+                    الدخول والتسجيل، وصفحة للمنتجات، وصفحة لوصف المنتج، وصفحة
+                    لإتمام الشراء. تم بناء المشروع باستخدام HTML وCSS
+                    وJavaScript وBootstrap، ويركز على تقديم واجهة استخدام
+                    متجاوبة وسهلة للمستخدم.
+                  </span>
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">JavaScript</span>
+
+                  <span class="tag">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/Netflix.png" alt="Project" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://www.linkedin.com/posts/paula-samy-5097a2266_webdevelopment-frontend-netflixclone-activity-7237875193325453312-fa37?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFBrlkB7_X9vrT8d2KcLRP0v_VhuWSOunQ"
+                      class="project-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PaulaSamy5/NetflixClone"
+                      class="project-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>
+                  <span class="en"
+                    >Netflix Home Page Clone UI (Front-end only)</span
+                  >
+                  <span class="ar"
+                    >مشروع واجهة مستخدم مشابهة لصفحة نتفليكس</span
+                  >
+                </h3>
+                <p>
+                  <span class="en"
+                    >I’ve developed a front-end clone of the Netflix HomePage,
+                    complete with fully functional sign-in and sign-up pages.
+                    This project was built for educational purposes, respecting
+                    Netflix’s intellectual property. It showcases my ability to
+                    recreate complex user interfaces, focusing on responsive
+                    design and smooth user interactions. The project
+                    demonstrates my skills in HTML, CSS, and JavaScript while
+                    enhancing my understanding of modern web development
+                    practices.
+                  </span>
+                  <span class="ar"
+                    >لقد قمت بتطوير نسخة أمامية (Front-end) مُقلدة من الصفحة
+                    الرئيسية لـ Netflix، متضمنة صفحات تسجيل الدخول وتسجيل الحساب
+                    بشكل كامل وفعّال. تم تنفيذ هذا المشروع لأغراض تعليمية مع
+                    احترام حقوق الملكية الفكرية الخاصة بـ Netflix. يبرز هذا
+                    العمل قدرتي على إعادة تصميم واجهات مستخدم معقدة، مع التركيز
+                    على التصميم المتجاوب وتجربة المستخدم السلسة. كما يعكس
+                    المشروع مهاراتي في HTML وCSS وJavaScript، ويعزز فهمي
+                    لممارسات تطوير الويب الحديثة.
+                  </span>
+                </p>
+                <div class="project-tags">
+                  <span class="tag">HTML</span>
+                  <span class="tag">CSS</span>
+                  <span class="tag">Bootstrap</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card">
+              <div class="project-image">
+                <img src="images/AIS.png" alt="Project" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://www.linkedin.com/posts/paula-samy-5097a2266_aiindevelopment-accountingsystem-python-activity-7354200420182908928-rhjD?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEFBrlkB7_X9vrT8d2KcLRP0v_VhuWSOunQ"
+                      class="project-link"
+                      ><i class="fas fa-link"></i
+                    ></a>
+                    <a
+                      href="https://github.com/PaulaSamy5/BakeryAIS-DesktopProject"
+                      class="project-link"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>
+                  <span class="en">Bakery Accounting Information System</span>
+                  <span class="ar">نظام معلومات محاسبة المخبز</span>
+                </h3>
+                <p>
+                  <span class="en"
+                    >💼 A desktop-based Accounting Information System developed
+                    using Python (PyQt6) and SQLite. The project was part of the
+                    Accounting Information System course and was uniquely built
+                    with the help of AI tools like ChatGPT and GitHub Copilot.
+                    It manages sales, purchases, expenses, inventory, and
+                    generates accounting reports with a clean and simple UI.
+                  </span>
+                  <span class="ar"
+                    >💼 نظام معلومات محاسبية لسطح المكتب تم تطويره باستخدام
+                    Python (PyQt6) وقاعدة بيانات SQLite. تم تنفيذ المشروع كجزء
+                    من مادة نُظم المعلومات المحاسبية، وتميّز بأنه تم بناؤه
+                    بمساعدة أدوات الذكاء الاصطناعي مثل ChatGPT وGitHub Copilot.
+                    يقوم النظام بإدارة المبيعات، والمشتريات، والمصروفات،
+                    والمخزون، كما يُولّد تقارير محاسبية من خلال واجهة استخدام
+                    بسيطة وواضحة.
+                  </span>
+                </p>
+                <div class="project-tags">
+                  <span class="tag">Python</span>
+                  <span class="tag">SQLite</span>
+                  <span class="tag">Accounting Principles</span>
+                  <span class="tag">AI-assisted Development</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="contact-modal" style="margin-top: 0; padding-top: 0">
+      <div class="modal-overlay"></div>
+      <div class="modal-content">
+        <button class="modal-close"><i class="fas fa-times"></i></button>
+        <div class="modal-body">
+          <h2 class="modal-title">
+            <span class="en">Contact Me</span>
+            <span class="ar">اتصل بي</span>
+          </h2>
+          <div class="contact-container">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">
+                  <span class="en">Name</span>
+                  <span class="ar">الاسم</span>
+                </label>
+                <input type="text" id="name" required />
+              </div>
+              <div class="form-group">
+                <label for="email">
+                  <span class="en">Email</span>
+                  <span class="ar">البريد الإلكتروني</span>
+                </label>
+                <input type="email" id="email" required />
+              </div>
+              <div class="form-group">
+                <label for="message">
+                  <span class="en">Message</span>
+                  <span class="ar">الرسالة</span>
+                </label>
+                <textarea id="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-btn">
+                <span class="en">Send Message</span>
+                <span class="ar">إرسال الرسالة</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </form>
+            <div class="contact-info">
+              <div class="contact-card">
+                <i class="fas fa-envelope"></i>
+                <h3>
+                  <span class="en">Email</span>
+                  <span class="ar">البريد الإلكتروني</span>
+                </h3>
+                <p>paulasamy52@gmail.com</p>
+              </div>
+              <div class="contact-card">
+                <i class="fas fa-phone"></i>
+                <h3>
+                  <span class="en">Phone</span>
+                  <span class="ar">الهاتف</span>
+                </h3>
+                <p>01289562111</p>
+              </div>
+              <div class="contact-card">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>
+                  <span class="en">Location</span>
+                  <span class="ar">الموقع</span>
+                </h3>
+                <p>
+                  <span class="en">Suez, Egypt</span>
+                  <span class="ar">السويس، مصر</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+  </body>
+</html>
