@@ -759,6 +759,27 @@ html[lang="ar"] .skill-header {
   .contact-info {
     grid-template-columns: repeat(3, 1fr);
   }
+  .modal-body {
+    height: calc(90vh - 3rem);
+  }
+  #about-modal .modal-body {
+    overflow-y: auto;
+  }
+  #about-modal .modal-body::-webkit-scrollbar {
+    width: 6px;
+  }
+  #about-modal .modal-body::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 10px;
+  }
+  #about-modal .modal-body::-webkit-scrollbar-thumb {
+    background: var(--primary);
+    border-radius: 10px;
+    transition: background-color 0.3s;
+  }
+  #about-modal .modal-body::-webkit-scrollbar-thumb:hover {
+    background: var(--primary-dark);
+  }
 }
 
 @media (max-width: 768px) {
@@ -776,7 +797,7 @@ html[lang="ar"] .skill-header {
     align-items: flex-start;
     gap: 0;
     border-radius: 0 0 16px 16px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
     padding: 1rem 2rem;
     z-index: 2001;
     opacity: 0;
@@ -948,7 +969,7 @@ html[lang="ar"] .modal.active .modal-content {
     pointer-events: none;
     transform: translateY(-10px);
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-    background-color: #141F32;
+    background-color: #141f32;
   }
 
   .nav-links.show {
