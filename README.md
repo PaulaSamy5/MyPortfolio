@@ -1,7 +1,7 @@
-Welcome to my portfolio!
+# 🌐 Portfolio Website  
 
-Here, you'll find information about my skills, projects, and how to connect with me on social media.
+A simple **personal portfolio website** to showcase my projects and skills.  
+Built with **HTML, CSS, and a bit of JavaScript**.  
 
-
-Live Demo: [https://paulasamy5.github.io/MyPortfloio/
-](https://paulasamy5.github.io/MyPortfolio/)
+## 🚀 Live Demo  
+👉 [Click here to view](https://paulasamy5.github.io/MyPortfolio/) 
