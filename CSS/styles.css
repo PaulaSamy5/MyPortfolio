@@ -472,7 +472,7 @@ html[lang="ar"] .skill-header {
 /* Projects Section */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
   gap: 2rem;
   max-height: calc(85vh - 120px);
   overflow-y: auto;
@@ -574,6 +574,77 @@ html[lang="ar"] .skill-header {
   padding: 0.3rem 0.8rem;
   border-radius: 20px;
   font-size: 0.8rem;
+}
+
+/* Project card extras: status badge, action buttons */
+.project-status-badge {
+  position: absolute;
+  top: 0.75rem;
+  inset-inline-end: 0.75rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  background: #f59e0b;
+  color: #1f2937;
+  font-family: var(--font-en);
+  font-size: 0.8rem;
+  font-weight: 600;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+html[lang="ar"] .project-status-badge {
+  font-family: var(--font-ar);
+}
+
+.project-actions {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.project-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary);
+  border-radius: 20px;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.85rem;
+  text-decoration: none;
+  transition: all var(--transition);
+}
+
+.project-btn:hover {
+  background: var(--primary-dark);
+  border-color: var(--primary-dark);
+  transform: translateY(-2px);
+}
+
+.project-btn--outline {
+  background: transparent;
+  color: var(--primary);
+}
+
+.project-btn--outline:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+
+/* No link available for this project: plain label, not clickable */
+.project-btn--unavailable {
+  background: transparent;
+  border-style: dashed;
+  border-color: var(--text-secondary);
+  color: var(--text-secondary);
+  opacity: 0.8;
+  cursor: default;
 }
 
 /* Contact Section */
